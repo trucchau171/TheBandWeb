@@ -362,7 +362,7 @@ html {
     max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
-
+    animation: modalSlideIn ease 0.5s;
 }
 
 .modal-header {
@@ -472,4 +472,15 @@ html {
 
 #footer .copyright a {
     color: inherit;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-130px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
